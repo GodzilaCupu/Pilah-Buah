@@ -157,7 +157,7 @@ Camera:
   m_GameObject: {fileID: 51908066}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 2
+  m_ClearFlags: 1
   m_BackGroundColor: {r: 0.36832502, g: 0.56628245, b: 0.8773585, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
@@ -278,7 +278,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -523,13 +523,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 283243425}
-  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
+  m_LocalRotation: {x: -0.008690516, y: -0.747734, z: 0.6638693, w: -0.009788364}
   m_LocalPosition: {x: 0, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+  m_LocalEulerAnglesHint: {x: 83.2, y: -181.5, z: 0}
 --- !u!1 &380737993
 GameObject:
   m_ObjectHideFlags: 0
@@ -696,6 +696,8 @@ MonoBehaviour:
   - {fileID: 1971956266}
   - {fileID: 380737993}
   audio: {fileID: 1287578747}
+  winNews:
+  - {fileID: 1892971718}
 --- !u!65 &677575524
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -856,7 +858,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -950,8 +952,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+    rgba: 4291348680
+  m_fontColor: {r: 0.7830189, g: 0.7830189, b: 0.7830189, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1265,6 +1267,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: cone
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8f062f242f42b0440817fc734ffeb9b2,
+        type: 3}
+      propertyPath: m_TagString
+      value: Red
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f062f242f42b0440817fc734ffeb9b2, type: 3}
@@ -1691,7 +1698,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1282797762}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1892971722}
+        m_MethodName: MainMenu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1282797762
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1966,7 +1984,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 8f062f242f42b0440817fc734ffeb9b2,
         type: 3}
       propertyPath: m_TagString
-      value: Red
+      value: LightBlue
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f062f242f42b0440817fc734ffeb9b2, type: 3}
@@ -2152,7 +2170,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1863981393}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1892971722}
+        m_MethodName: Lanjut1
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1863981393
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2202,13 +2231,14 @@ GameObject:
   - component: {fileID: 1892971719}
   - component: {fileID: 1892971721}
   - component: {fileID: 1892971720}
+  - component: {fileID: 1892971722}
   m_Layer: 5
   m_Name: BGWIN
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1892971719
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2268,6 +2298,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1892971718}
   m_CullTransparentMesh: 0
+--- !u!114 &1892971722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1892971718}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1ab72a98ad0a104e86f9ac932cd11a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1909464631 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8915468458600128965, guid: 42f08c6af93a6e54f943d1b80454715d,
@@ -2676,6 +2718,7 @@ MonoBehaviour:
   - {fileID: 1971956266}
   - {fileID: 380737993}
   audio: {fileID: 0}
+  winNews: []
 --- !u!1001 &3252383642600327466
 PrefabInstance:
   m_ObjectHideFlags: 0

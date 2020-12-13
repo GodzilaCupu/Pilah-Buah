@@ -1,18 +1,41 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 using UnityEngine;
 
 public class UIManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    #region Level 1
+
+    public void MainMenu()
     {
-        
+        SceneManager.LoadScene("MainMenu");
     }
 
-    // Update is called once per frame
-    void Update()
+    public void Lanjut1()
     {
-        
+        SceneManager.LoadScene("Level 2");
     }
+
+    #endregion
+
+    #region Level 2
+
+    public void Lanjut2()
+    {
+        SceneManager.LoadScene("Level 3");
+    }
+
+    #endregion
+
+    #region Level 3
+
+    public void Lanjut3()
+    {
+        SceneManager.LoadScene("MainMenu");
+    }
+
+    #endregion
+
 }
