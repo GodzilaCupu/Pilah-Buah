@@ -38,4 +38,22 @@ public class UIManager : MonoBehaviour
 
     #endregion
 
+    #region MainMenu
+    public void playIntro()
+    {
+        SceneManager.LoadScene("Intro");
+    }
+
+    public void Quit()
+    {
+        Application.Quit();
+    }
+    #endregion
+
+    #region MainMenu
+    public void Play()
+    {
+        SceneManager.LoadScene("Level 1");
+    }
+    #endregion
 }
